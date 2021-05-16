@@ -1,1 +1,2 @@
-Tbilisi Weather
+Tbilisi Weather Forecast
+Temperature and humidity
