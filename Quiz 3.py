@@ -1,19 +1,17 @@
 import requests
 import json
 
-key = '45b568275717c99904f6ca89c278152e'
-city = (input("Enter The City: "))
-url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={key}&units=metric"
+
+url = "https://animechan.vercel.app/api/random"
 resp = requests.get(url)
 result_json = resp.text
-res = json.loads(result_json)
+res = json.loads((result_json))
+data = requests.get(url).json()
 res_structured = json.dumps(res, indent = 4)
 print(res_structured)
-m = res['main']
-temp = m['temp']
-humidity = m['humidity']
+
+character = data['character']
+quote = data['quote']
 print(resp.text)
 print(resp.status_code)
 print(resp.url)
-print('Temperature: ', temp, 'Celsius')
-print('Humidty', humidity, '%')

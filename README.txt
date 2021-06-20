@@ -1,2 +1,2 @@
-Tbilisi Weather Forecast
-Temperature and humidity
+Anime Charachters random quotes
+ანიმე პერსონაჟების შემთხვევითი ციტატები
